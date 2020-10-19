@@ -15,7 +15,7 @@
                 <div class="carousel-inner" role="listbox">
                     @foreach($urunler_slider as $index => $urun)
                         <div class="item{{ $index == 0 ? 'active' : '' }}">
-                            <img src="http://lorempixel.com/640/400/food/2" alt="...">
+                            <img src="http://via.placeholder.com/650/400?text=UrunResmi" alt="...">
                             <div class="carousel-caption">
                                 {{$urun->baslik}}
                             </div>
@@ -37,7 +37,7 @@
                 <div class="panel-heading">Günün Fırsatı</div>
                 <div class="panel-body">
                     <a href="{{route('urun',$urun_gunun_firsati->slug)}}">
-                        <img src="http://lorempixel.com/400/485/food/1" class="img-responsive">
+                        <img src="http://via.placeholder.com/400/485?text=UrunResmi" class="img-responsive">
                         {{$urun_gunun_firsati->baslik}}
                     </a>
                 </div>
@@ -53,7 +53,7 @@
                 <div class="row">
                     @foreach($urunler_one_cikan as $one_cikan)
                         <div class="col-md-3 product">
-                            <a href="{{route('urun',$one_cikan->slug)}}"><img src="http://lorempixel.com/400/400/food/1"></a>
+                            <a href="{{route('urun',$one_cikan->slug)}}"><img src="http://via.placeholder.com/400/400?text=UrunResmi"></a>
                             <p><a href="#">{{$one_cikan->baslik}}</a></p>
                             <p class="price">{{$one_cikan->fiyat}}{{$one_cikan->para_birimi}}</p>
                         </div>
@@ -70,7 +70,7 @@
                 <div class="row">
                     @foreach($urunler_cok_satan as $cok_satan)
                         <div class="col-md-3 product">
-                            <a href="{{'urun', $cok_satan->slug}}"><img src="http://lorempixel.com/400/400/food/1"></a>
+                            <a href="{{'urun', $cok_satan->slug}}"><img src="http://via.placeholder.com/400/400?text=UrunResmi"></a>
                             <p><a href="#">{{$cok_satan->baslik}}</a></p>
                             <p class="price">{{$cok_satan->fiyat}}{{$cok_satan->para_birimi}} </p>
                         </div>
@@ -86,7 +86,7 @@
                 <div class="row">
                     @foreach($urunler_indirimli as $indirimli)
                         <div class="col-md-3 product">
-                            <a href="{{route('urun',$indirimli->slug)}}"><img src="http://lorempixel.com/400/400/food/1"></a>
+                            <a href="{{route('urun',$indirimli->slug)}}"><img src="http://via.placeholder.com/400/400?text=UrunResmi"></a>
                             <p><a href="#">{{$indirimli->baslik}}</a></p>
                             <p class="price">{{$indirimli->fiyat}}{{$indirimli->para_birimi}}</p>
                         </div>
